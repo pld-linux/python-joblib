@@ -1,14 +1,16 @@
+# NOTE: for versions >= 0.15.0 for python 3.6+ see python3-joblib.spec
 # TODO: system modules: cloudpickle, loky
 #
 # Conditional build:
 %bcond_with	doc	# Sphinx documentation (fails on missing examples???)
 %bcond_without	tests	# unit tests
 %bcond_without	python2 # CPython 2.x module
-%bcond_without	python3 # CPython 3.x module
+%bcond_with	python3 # CPython 3.x module (built from python3-joblib.spec)
 
 Summary:	Lightweight pipelining: using Python functions as pipeline jobs
 Summary(pl.UTF-8):	Lekkie przetwarzanie potokowe przy użyciu funkcji pythonowych jako zadań
 Name:		python-joblib
+# keep 0.14.x here for python2 support
 Version:	0.14.1
 Release:	1
 License:	BSD
