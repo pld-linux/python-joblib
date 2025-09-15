@@ -12,7 +12,7 @@ Summary(pl.UTF-8):	Lekkie przetwarzanie potokowe przy użyciu funkcji pythonowyc
 Name:		python-joblib
 # keep 0.14.x here for python2 support
 Version:	0.14.1
-Release:	1
+Release:	2
 License:	BSD
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/joblib/
